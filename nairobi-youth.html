@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Nairobi Youth Coding Bootcamp</h1>
+    <h2>Application Form - January 2027 Intake</h2>
+    <p>Please fill in all fields marked with <strong>*</strong>.Applications close on <time datetime="15th December 2026.">15th December 2026.</time></p>
+    <form>
+        <fieldset>
+            <legend>1.Personal Details</legend><br>
+            <label for="First name*">First name*</label><br>
+            <input type="text" placeholder="e.g. Brian"><br>
+            <label for="Last name*">Last name*</label><br>
+            <input type="text" placeholder="e.g. Otieno"><br>
+            <label for="dob">Date of birth*</label><br>
+            <input type="date" id="dob"><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="gender" value="male"> male
+            <input type="radio" id="gender" value="female"> female
+            <input type="radio" id="gender" value="prefer not to say"> prefer not to say <br>
+            <label for="nidnumber">National ID number</label><br>
+            <input type="text" id="nidnumber">
+        </fieldset>
+        <fieldset>
+            <legend>2.Contact Information</legend><br>
+            <label for="email">Email*</label><br>
+            <input type="email" id="email"><br>
+            <label for="phone number">Phone number</label><br>
+            <input type="tel" id="phone number"><br>
+            <label for="county">County</label><br>
+            <input type="text" id="county"><br>
+            <label for="portfolio">Portfolio/website</label><br>
+            <input type="url" id="portfolio"><br>
+        </fieldset>
+        <fieldset>
+            <legend>3.Course Choice</legend>
+            <label for="course">Select Course*</label><br>
+            <input type="text" id="course" name="courses" list="courses">
+            <datalist id="courses">
+                <option value="BIT">
+                    <option value="BCS">
+                        <option value="BBIT">
+                        <option value="BHT">
+            </datalist><br>
+            <label for="preffered">preffered session:</label><br>
+            <input type="radio" id="preffered">Morning(8 a.m. - 12 p.m.) <br>
+            <input type="radio" id="preffered">Afternoon(1 p.m. - 5 p.m.) <br>
+            <input type="radio" id="preffered">Weekend only <br>
+            <label for="startmonth">Preferred start month</label><br>
+            <input type="month" id="startmonth"><br>
+            <label for="best">Best time to call you</label><br>
+            <input type="time" id="best"><br>
+        </fieldset>
+        <fieldset>
+            <legend>4.About you</legend><br>
+            <label for="devices">Which devices do you have?(tick all that apply)</label><br>
+            <input type="checkbox" id="devices">Laptop<br>
+            <input type="checkbox" id="devices">smartphone<br>
+            <input type="checkbox" id="devices">Tablet<br>
+            <label for="rate">Rate your computer skills(1 = beginner,10 = expert)</label><br>
+            1<input type="range" id="rate" min="1" max="10">10 <br>
+            <label for="colour">pick your favorite colour(just for fun!)</label>
+            <input type="color"   id="colour"><br>
+            <label for="reason">Why do you want to join? *</label><br>
+            <textarea  id="reason" >Tell as in a few sentences...</textarea><br>
+            <label for="Uploads">Upload your CV(PDF)*</label><br>
+            <input type="file" id="Uploads"><br>
+        </fieldset>
+        <fieldset>
+            <legend>5.Account & Agreement</legend><br>
+            <label for="choose">Choose a username:</label><br>
+            <input type="text" name="" id="choose"><br>
+            <label for="pin">Password*</label><br>
+            <input type="password" id="pin"><br>
+            <label for="referallcode">Referral code</label><br>
+            <input type="text" id="referralcode" value="NYCB-2027" readonly><br>
+            <input type="checkbox"> I agree to the <a href=".termsandconditions">terms and conditions*</a><br>
+        </fieldset>
+        <button type="submit">Submit Application</button>
+        <button type="reset">Clear Form</button>
+        <input type="button" disabled value="Save Draft">
+        <hr>
+        <label for="help"><small>Need help? Email <a href=".admissions@nycb.example">admissions@nycb.example</a></small></label>
+        
+        </body>
+            </html>

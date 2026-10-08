@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Cheat sheet</title>
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+<body>
+    <div id="div1">
+        <h1 id="h1">Git for Beginners: A Quick Reference Guide</h1>
+    <p class="p1"><small>Version2.1- Maintained by the <abbr title="DSC">DSC</abbr> Tech Team</small></p>
+    <p>maxcfjlaoa</p>
+    <p>pseudo-class code very important</p>
+    <details open class="details">
+        <summary><strong>Table of contents</strong></summary>
+    <ol>
+        <li><a href="What.is.Git?">What is Git?</a></li>
+        <li><a href="Installation">Installation</a></li>
+        <li><a href="Common.Commands">Common Commands</a></li>
+        <li><a href="Keyboard.Shortcuts">Keyboard Shortcuts</a></li>
+        <li><a href="Changelog">Changelog</a></li>
+    </ol>
+    <hr>
+    </details>
+    </div>
+    <!-- <h1>Git for Beginners: A Quick Reference Guide</h1>
+    <p><small>Version2.1- Maintained by the <abbr title="DSC">DSC</abbr> Tech Team</small></p>
+    <details open>
+        <summary><strong>Table of contents</strong></summary>
+    <ol>
+        <li><a href="What.is.Git?">What is Git?</a></li>
+        <li><a href="Installation">Installation</a></li>
+        <li><a href="Common.Commands">Common Commands</a></li>
+        <li><a href="Keyboard.Shortcuts">Keyboard Shortcuts</a></li>
+        <li><a href="Changelog">Changelog</a></li>
+    </ol>
+    <hr>
+    </details> -->
+    
+    <h2 id="What.is.Git">1.What is Git?</h2>
+    <dfn>Git is a version control <em>system.</em> It keeps a history of every change you make to your files, so you can go back to an older version at any time.</dfn>
+    <blockquote><b>Note:</b> Git and GitHub are <u>not</u> the same thing. Git is the tool;GitHub is a website that stores Git projects online.</blockquote>
+    <h2 id="Installation">2.Installation</h2>
+    <ol><li>Download Git from <a href="git-scm.com.">git-scm.com.</a></li>
+    <li>Run the installer and accept the default options.</li>
+    <li>Open your terminal and type:</li>
+    <pre><code>git --version</code></pre>
+    <li>You should see output like:</li>
+    <pre><code>git version 2.45.1</code></pre>
+    <li>Set your name and email:</li>
+    
+        <pre><code id="insidepre">git config --global user.name <samp>"Your Name"</samp></code></pre>
+        <pre><code id="insidepre">git config --global user.email <samp>"you@example.com"</samp></code></pre>
+        <img src="Terminal-screenshot.jpg 420*160">
+    </ol>
+    <h2 id="Common.Commands">3.Common Commands</h2>
+    <table border="1">
+        <caption>Everyday Git commands</caption>
+        <thead>
+            <tr>
+                <th>Command</th>
+                <th>What it does</th>
+                <th>Example</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr id="even">
+                <td><code>git init</code></td>
+                <td>Creates a new repository</td>
+                <td><code>git init</code></td>
+            </tr>
+            <tr>
+                <td><code>git add</code></td>
+                <td>Stages a file for commit</td>
+                <td><code>git add <var>index.html</var></code></td>
+            </tr>
+            <tr id="even">
+                <td><code>git commit</code></td>
+                <td>Saves a snapshot with a message</td>
+                <td><code>git commit -m <em>"message"</code></em></td>
+            </tr>
+            <tr>
+                <td><code>git status</code></td>
+                <td>Shows changed files</td>
+                <td><code>git status</code></td>
+            </tr>
+            <tr id="even">
+                <td>git log</td>
+                <td>Shows commit history</td>
+                <td><code>git log --online</code></td>
+            </tr>
+            <tr>
+                <td><code>git push</code></td>
+                <td>Uploads commits to GitHub</td>
+                <td><code>git push origin main</code></td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Key terms</h3>
+    <dl>
+        <dt><code>repository</code>(repo)</dt>
+        <dd>A folder that Git is tracking</dd>
+
+        <dt><code>commit</code></dt>
+        <dd>A saved snapshot of your project</dd>
+
+        <dt><code>branch</code></dt>
+        <dd>A separate line of work, e.g main or feature-login</dd>
+    </dl>
+    <h2 id="Keyboard.Shortcuts">4.Keyboard shortcuts(VS Code)</h2>
+    <ul>
+        <li>Open terminal: <kbd>ctrl +</kbd></li>
+        <li>Save file: <kbd>Ctrl</kbd> + <kbd>S</kbd></li>
+        <li>Open command palette: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd></li>
+        <li>Stop a running command: <kbd>Ctrl</kbd> + <kbd>C</kbd></li>
+    </ul>
+    <h3>Common Error Messages</h3>
+    <p>If you see <code>fatal: not a git repository,</code> it means you forgot to run <code>git init.</code></p>
+    <p>If you see <code>nothing to commit, working tree clean,</code> you have no new changes. &#9989;</p>
+    <h2 id="Changelog">5.Changelog</h2>
+    <ul>
+        <li><b>v2.1</b><time datetime="15 Sep 2026">(15 Sep 2026)</time>:<ins>Added keyboard shortcuts section.</ins></li>
+        <li><b>v2.0</b><time datetime="12 May 2026">(12 May 2026)</time>:<del>Removed SVN comparison.</del><ins> Added error messages.</ins></li>
+        <li><b>v1.0</b>: <s>First draft</s> Initial release.</li>
+    </ul>
+    <hr>
+    <p><small>Found a mistake? Open an issue at <a href="github.com/dsc/git-guide.">git-guide</a>. &copy; 2026 DSC Tech Team.</small></p>
+    <p><a href="#">&uarr; Back to top</a></p>
+
+</body>
+</html>
